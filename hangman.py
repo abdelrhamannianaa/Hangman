@@ -16,7 +16,7 @@ count =0
 
 # Create a string of underscores the size of the chosenWord and typecast it as a list to be modified
 underscoredWord = list(len(chosenWord) * '_')
-lives = 6
+lives = 7
 
 # letters that the user already guessed so they dont lose a life or dont get repeated prompts
 userGuesses = []
@@ -50,7 +50,7 @@ while lives > 0:
         count+=1
         print(HANGMANPICS[count])
         lives-=1
-        print(f"+++++++++++++++++++++++++++++ {lives}/6 left ++++++++++++++++++++++++++++")
+        print(f"+++++++++++++++++++++++++++++ {lives}/7 left ++++++++++++++++++++++++++++")
 if lives == 0:
     print("GAME OVER, better luck next time losa")
     print(f"BTW, the word was {chosenWord}")
